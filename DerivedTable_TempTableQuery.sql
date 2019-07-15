@@ -13,7 +13,8 @@ GO
 ALTER PROCEDURE [dbo].[GetCustomQuery]
 	-- Add the parameters for the stored procedure here
 	@id bigint,
-	@country nvarchar(50)
+	@country nvarchar(50),
+	@postcalcode nvarchar(10)
 AS
 BEGIN
 	-- SET NOCOUNT ON added to prevent extra result sets from
@@ -57,7 +58,7 @@ WHERE  o.custid IN (SELECT TOP 1 custid FROM Sales.Customers sc WHERE sc.contact
 )TQ
 
 WHERE TQ.OrderId = @id
- AND TQ.PostalCode > 10076 
+ AND TQ.PostalCode > @postcalcode 
  AND TQ.Country LIKE '%'+ @country+'%' 
 SELECT * FROM #Temp
 DROP TABLE #Temp
