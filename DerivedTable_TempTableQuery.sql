@@ -58,7 +58,7 @@ WHERE  o.custid IN (SELECT TOP 1 custid FROM Sales.Customers sc WHERE sc.contact
 )TQ
 
 WHERE TQ.OrderId = @id
- AND TQ.PostalCode > @postcalcode 
+ AND TQ.PostalCode = @postcalcode 
  AND TQ.Country LIKE '%'+ @country+'%' 
 SELECT * FROM #Temp
 DROP TABLE #Temp
