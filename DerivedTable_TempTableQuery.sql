@@ -10,7 +10,7 @@ GO
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- =============================================
-ALTER PROCEDURE [dbo].[GetCustomQuery]
+CREATE PROCEDURE [dbo].[GetCustomQuery]
 	-- Add the parameters for the stored procedure here
 	@id bigint,
 	@country nvarchar(50),
