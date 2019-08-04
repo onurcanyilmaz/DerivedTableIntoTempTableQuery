@@ -23,8 +23,8 @@ BEGIN
 
     -- Insert statements for procedure here
 	CREATE TABLE #Temp(
-        id int,
-	    value1 nvarchar(50),
+                id int,
+	        value1 nvarchar(50),
 		value2 nvarchar(50),
 		value3 nvarchar(50),	
 		value4 nvarchar(50),
