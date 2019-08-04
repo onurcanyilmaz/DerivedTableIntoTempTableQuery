@@ -1,4 +1,3 @@
-USE [TSQLV4]
 GO
 /****** Object:  StoredProcedure [dbo].[GetCustom]    Script Date: 16.07.2019 01:11:30 ******/
 SET ANSI_NULLS ON
