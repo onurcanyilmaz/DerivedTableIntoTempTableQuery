@@ -1,5 +1,4 @@
-GO
-/****** Object:  StoredProcedure [dbo].[GetCustom]    Script Date: 16.07.2019 01:11:30 ******/
+/****** Object:  StoredProcedure [dbo].[GetCustomQuery]    Script Date: 16.07.2019 01:11:30 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
